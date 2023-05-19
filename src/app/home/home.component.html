@@ -1,0 +1,23 @@
+<section class="d-flex justify-content-between align-itens-center pt-4 mb-4 ff">
+  <h3 class="mt-4">Welcome to MyCourses Page!</h3>
+  <div class="d-flex mt-2">
+    <input (keyup.enter)="onSearch()" type="text" placeholder="Find a Course" class="form-control me-3" #search>
+    <button class="btn btn-primary" (click)="onSearch()">Search</button>
+  </div>
+</section>
+
+
+  <carousel>
+
+    <slide>
+      <img src="../../assets/images/prg.jpg" class="ca-logo" alt="backend">
+    </slide>
+    <slide>
+      <img src="../../assets/images/frontEnd.jpg" class="ca-logo" alt="frontend">
+    </slide>
+    <slide>
+      <img src="../../assets/images/cnet.png" class="ca-logo" alt="agil">
+    </slide>
+  </carousel>
+
+

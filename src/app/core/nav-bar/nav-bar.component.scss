@@ -1,0 +1,54 @@
+
+
+.logo{
+  max-height: 70px;
+  cursor: pointer;
+}
+
+.container{
+  width: 100%;
+}
+
+.navbar{
+  --bs-navbar-padding-y: 0 !important;
+  width: 100%;
+  background-color: #205295;
+  padding-right: 2%;
+  padding-left: 2%;
+}
+
+.singUp{
+  width: 90px;
+  border-color: rgb(192, 191, 191) !important;
+}
+
+.log{
+  border-color: rgb(192, 191, 191) !important;
+}
+
+.links{
+  margin-left: 20%;
+}
+
+.cart-no{
+  position: absolute;
+  min-height: 15px;
+  width: 23px;
+  border-radius: 50%;
+  background: #ffdf00;
+  color: green !important;
+  text-align: center;
+  top: -12px;
+  right: 32px;
+}
+
+.nav-link{
+  color: rgba(245, 243, 243, 0.911);
+
+  &.active{
+    color: rgb(243, 247, 9);
+  }
+}
+
+
+

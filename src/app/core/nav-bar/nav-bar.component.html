@@ -1,0 +1,41 @@
+<div class="container">
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top">
+    <div class="container-fluid">
+      <img src="../../assets/images/logo.png" alt="logo" class="logo" routerLink="/">
+      <a class="navbar-brand fs-4" routerLink="/">MyCourses</a>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav links me-auto fs-5">
+          <li class="nav-item">
+            <a class="nav-link"
+               aria-current="page"
+               routerLink="/"
+               routerLinkActive="active"
+               [routerLinkActiveOptions]="{exact: true}"
+               >Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/shop" routerLinkActive="active">Courses</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/contact" routerLinkActive="active">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/test-error" routerLinkActive="active">Test Error</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="d-flex align-items-center me-4">
+
+      <a class="position-relative" routerLink="/basket">
+        <i class="fa fa-shopping-cart fa-2x me-5 text-white"></i>
+        <div *ngIf="(basketService.basketSource$ | async) as basket" class="cart-no text-white">
+          <strong>{{getCount(basket.items)}}</strong>
+        </div>
+      </a>
+      <a href="#" class="btn btn-outline-primary me-3 log text-white">Login</a>
+      <a href="#" class="btn btn-outline-primary text-white singUp">Sing up</a>
+    </div>
+  </nav>
+
+</div>
